@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Carousel 1</title>
+</head>
+<style>
+    body {
+        margin: 0;
+    }
+
+    .carousel {
+        width: 100%;
+        overflow: scroll;
+        padding: 30px;
+        position: relative;
+    }
+
+    .carousel__container {
+        white-space: nowrap;
+        margin: 70px 0px;
+        padding-bottom: 10px;
+    }
+
+    .carousel-item {
+        background-color: palevioletred;
+        width: 200px;
+        height: 250px;
+        border-radius: 20px;
+        overflow: hidden;
+        margin-right: 10px;
+        display: inline-block;
+        cursor: pointer;
+        transition: 450ms all;
+        transform-origin: center left;
+        position: relative;
+    }
+
+    .carousel-item__img {
+        width: 200px;
+        height: 250px;
+        object-fit: cover;
+    }
+
+    .carousel-item__datails {
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
+        font-size: 10px;
+        opacity: 0.5;
+        transition: 450ms opacity;
+        padding: 10px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    .carousel-item:hover ~ .carousel-item {
+        transform: translate3d(100px, 0, 0);
+    }
+
+    .carousel__container:hover .carousel-item {
+        opacity: 0.3;
+    }
+
+    .carousel__container:hover .carousel-item:hover {
+        transform: scale(1.5);
+        opacity: 1;
+    }
+</style>
+<body>
+    <section class="carousel">
+        <section class="carousel__container">
+            <section class="carousel-item">
+                <img class="carousel-item__img" src="../images/bird-s-eye-view-of-road-during-daytime-3467150.jpg" alt="">
+                <section class="carousel-item__details">
+                    <section>
+                       <img src="../icons/icons8-play-64.png" alt="">
+                        <img src="../icons/plus-icon.png" alt=""> 
+                    </section>
+                    <p class="carousel-item__details--title">Titulo descriptivo</p>
+                    <p class="carousel-item__details--subtitle">2019 16+ 114min</p>
+                </section>
+            </section>
+            <section class="carousel-item">
+                
+            </section>
+        </section>
+    </section>
+</body>
+</html>
