@@ -1,107 +1,293 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Muli&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
     <title>Home</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="header">
-        <img class="header__img" src=".././logo-platzi-video-BW2.png" alt="Platzi Video">
-        <div class="header__menu">
-            <div class="header__menu--profile">
-                <img src="../icons/user-icon.png" alt="User">
-                <p>Perfil</p>
-            </div>
-            <ul>
-                <li><a href="/">Cuenta</a></li>
-                <li><a href="/">Cerrar Sesión</a></li>
-            </ul>
+      <img
+        class="header__img"
+        src=".././logo-platzi-video-BW2.png"
+        alt="Platzi Video"
+      />
+      <div class="header__menu">
+        <div class="header__menu--profile">
+          <img src="../icons/user-icon.png" alt="User" />
+          <p>Perfil</p>
         </div>
+        <ul>
+          <li><a href="/">Cuenta</a></li>
+          <li><a href="/">Cerrar Sesión</a></li>
+        </ul>
+      </div>
     </header>
 
     <section class="main">
-        <h2 class="main__title">¿Qué quieres ver hoy?</h2>
-        <input class="input" type="text" placeholder="Buscar...">
+      <h2 class="main__title">¿Qué quieres ver hoy?</h2>
+      <input class="input" type="text" placeholder="Buscar..." />
     </section>
 
     <section class="carousel">
-        <section class="carousel__container">
-            <section class="carousel-item">
-                <img class="carousel-item__img" src="../images/bird-s-eye-view-of-road-during-daytime-3467150.jpg" alt="">
-                <section class="carousel-item__details">
-                    <section>
-                       <img src="../icons/icons8-play-64.png" alt="">
-                        <img src="../icons/plus-icon.png" alt=""> 
-                    </section>
-                    <p class="carousel-item__details--title">Titulo descriptivo</p>
-                    <p class="carousel-item__details--subtitle">2019 16+ 114min</p>
-                </section>
+      <h2 class="categories__title">Mi lista</h2>
+
+      <section class="carousel__container" id="myList">
+        <section class="carousel-item">
+          <img
+            class="carousel-item__img"
+            src="../images/bird-s-eye-view-of-road-during-daytime-3467150.jpg"
+            alt=""
+          />
+          <section class="carousel-item__details">
+            <section>
+              <img src="../icons/icons8-play-64.png" alt="" />
+              <img class="less" src="../icons/pngfuel.com.png" alt="" />
             </section>
-            <section class="carousel-item">
-                <img class="carousel-item__img" src="../images/bird-s-eye-view-photography-of-high-rise-buildings-2304917.jpg" alt="">
-                <section class="carousel-item__details">
-                    <section>
-                       <img src="../icons/icons8-play-64.png" alt="">
-                        <img src="../icons/plus-icon.png" alt=""> 
-                    </section>
-                    <p class="carousel-item__details--title">Titulo descriptivo</p>
-                    <p class="carousel-item__details--subtitle">2019 16+ 114min</p>
-                </section>
-            </section>
-            <section class="carousel-item">
-                <img class="carousel-item__img" src="../images/black-man-reading-a-newspaper-3473492.jpg" alt="">
-                <section class="carousel-item__details">
-                    <section>
-                       <img src="../icons/icons8-play-64.png" alt="">
-                        <img src="../icons/plus-icon.png" alt=""> 
-                    </section>
-                    <p class="carousel-item__details--title">Titulo descriptivo</p>
-                    <p class="carousel-item__details--subtitle">2019 16+ 114min</p>
-                </section>
-            </section>
-            <section class="carousel-item">
-                <img class="carousel-item__img" src="../images/long-exposure-of-photography-of-brown-tree-3536526.jpg" alt="">
-                <section class="carousel-item__details">
-                    <section>
-                       <img src="../icons/icons8-play-64.png" alt="">
-                        <img src="../icons/plus-icon.png" alt=""> 
-                    </section>
-                    <p class="carousel-item__details--title">Titulo descriptivo</p>
-                    <p class="carousel-item__details--subtitle">2019 16+ 114min</p>
-                </section>
-            </section>
-            <section class="carousel-item">
-                <img class="carousel-item__img" src="../images/people-in-front-of-brown-concrete-building-while-feeding-3429761.jpg" alt="">
-                <section class="carousel-item__details">
-                    <section>
-                       <img src="../icons/icons8-play-64.png" alt="">
-                        <img src="../icons/plus-icon.png" alt=""> 
-                    </section>
-                    <p class="carousel-item__details--title">Titulo descriptivo</p>
-                    <p class="carousel-item__details--subtitle">2019 16+ 114min</p>
-                </section>
-            </section>
-            <section class="carousel-item">
-                <img class="carousel-item__img" src="../images/photo-of-bridge-under-white-clouds-3493777.jpg" alt="">
-                <section class="carousel-item__details">
-                    <section>
-                       <img src="../icons/icons8-play-64.png" alt="">
-                        <img src="../icons/plus-icon.png" alt=""> 
-                    </section>
-                    <p class="carousel-item__details--title">Titulo descriptivo</p>
-                    <p class="carousel-item__details--subtitle">2019 16+ 114min</p>
-                </section>
-            </section>
+            <p class="carousel-item__details--title">Titulo descriptivo</p>
+            <p class="carousel-item__details--subtitle">2019 16+ 114min</p>
+          </section>
         </section>
+        <section class="carousel-item">
+          <img
+            class="carousel-item__img"
+            src="../images/bird-s-eye-view-photography-of-high-rise-buildings-2304917.jpg"
+            alt=""
+          />
+          <section class="carousel-item__details">
+            <section>
+              <img src="../icons/icons8-play-64.png" alt="" />
+              <img class="less" src="../icons/pngfuel.com.png" alt="" />
+            </section>
+            <p class="carousel-item__details--title">Titulo descriptivo</p>
+            <p class="carousel-item__details--subtitle">2019 16+ 114min</p>
+          </section>
+        </section>
+        <section class="carousel-item">
+          <img
+            class="carousel-item__img"
+            src="../images/black-man-reading-a-newspaper-3473492.jpg"
+            alt=""
+          />
+          <section class="carousel-item__details">
+            <section>
+              <img src="../icons/icons8-play-64.png" alt="" />
+              <img class="less" src="../icons/pngfuel.com.png" alt="" />
+            </section>
+            <p class="carousel-item__details--title">Titulo descriptivo</p>
+            <p class="carousel-item__details--subtitle">2019 16+ 114min</p>
+          </section>
+        </section>
+      </section>
     </section>
+
+    <section class="carousel">
+        
+      <h2 class="categories__title">Tendencias</h2>
+
+      <section class="carousel__container">
+        <section class="carousel-item">
+          <img
+            class="carousel-item__img"
+            src="../images/woman-standing-on-staircase-with-a-bouquet-3484678.jpg"
+            alt=""
+          />
+          <section class="carousel-item__details">
+            <section>
+              <img src="../icons/icons8-play-64.png" alt="" />
+              <img class="add" src="../icons/plus-icon.png" alt="" />
+            </section>
+            <p class="carousel-item__details--title">Titulo descriptivo</p>
+            <p class="carousel-item__details--subtitle">2019 16+ 114min</p>
+          </section>
+        </section>
+        <section class="carousel-item">
+          <img
+            class="carousel-item__img"
+            src="../images/bird-s-eye-view-of-road-during-daytime-3467150.jpg"
+            alt=""
+          />
+          <section class="carousel-item__details">
+            <section>
+              <img src="../icons/icons8-play-64.png" alt="" />
+              <img class="add" src="../icons/plus-icon.png" alt="" />
+            </section>
+            <p class="carousel-item__details--title">Titulo descriptivo</p>
+            <p class="carousel-item__details--subtitle">2019 16+ 114min</p>
+          </section>
+        </section>
+        <section class="carousel-item">
+          <img
+            class="carousel-item__img"
+            src="../images/bird-s-eye-view-photography-of-high-rise-buildings-2304917.jpg"
+            alt=""
+          />
+          <section class="carousel-item__details">
+            <section>
+              <img src="../icons/icons8-play-64.png" alt="" />
+              <img class="add" src="../icons/plus-icon.png" alt="" />
+            </section>
+            <p class="carousel-item__details--title">Titulo descriptivo</p>
+            <p class="carousel-item__details--subtitle">2019 16+ 114min</p>
+          </section>
+        </section>
+        <section class="carousel-item">
+          <img
+            class="carousel-item__img"
+            src="../images/photo-of-car-parked-in-parking-lot-3378994.jpg"
+            alt=""
+          />
+          <section class="carousel-item__details">
+            <section>
+              <img src="../icons/icons8-play-64.png" alt="" />
+              <img class="add" src="../icons/plus-icon.png" alt="" />
+            </section>
+            <p class="carousel-item__details--title">Titulo descriptivo</p>
+            <p class="carousel-item__details--subtitle">2019 16+ 114min</p>
+          </section>
+        </section>
+        <section class="carousel-item">
+          <img
+            class="carousel-item__img"
+            src="../images/photo-of-woman-holding-dalmatian-3297503.jpg"
+            alt=""
+          />
+          <section class="carousel-item__details">
+            <section>
+              <img src="../icons/icons8-play-64.png" alt="" />
+              <img class="add" src="../icons/plus-icon.png" alt="" />
+            </section>
+            <p class="carousel-item__details--title">Titulo descriptivo</p>
+            <p class="carousel-item__details--subtitle">2019 16+ 114min</p>
+          </section>
+        </section>
+        <section class="carousel-item">
+          <img
+            class="carousel-item__img"
+            src="../images/rocky-cave-during-day-3522094.jpg"
+            alt=""
+          />
+          <section class="carousel-item__details">
+            <section>
+              <img src="../icons/icons8-play-64.png" alt="" />
+              <img class="add" src="../icons/plus-icon.png" alt="" />
+            </section>
+            <p class="carousel-item__details--title">Titulo descriptivo</p>
+            <p class="carousel-item__details--subtitle">2019 16+ 114min</p>
+          </section>
+        </section>
+      </section>
+    </section>
+
+    <section class="carousel">
+      <h2 class="categories__title">Originales PlatziVideo</h2>
+
+      <section class="carousel__container">
+        <section class="carousel-item">
+          <img
+            class="carousel-item__img"
+            src="../images/bird-s-eye-view-of-road-during-daytime-3467150.jpg"
+            alt=""
+          />
+          <section class="carousel-item__details">
+            <section>
+              <img src="../icons/icons8-play-64.png" alt="" />
+              <img class="add" src="../icons/plus-icon.png" alt="" />
+            </section>
+            <p class="carousel-item__details--title">Titulo descriptivo</p>
+            <p class="carousel-item__details--subtitle">2019 16+ 114min</p>
+          </section>
+        </section>
+        <section class="carousel-item">
+          <img
+            class="carousel-item__img"
+            src="../images/bird-s-eye-view-photography-of-high-rise-buildings-2304917.jpg"
+            alt=""
+          />
+          <section class="carousel-item__details">
+            <section>
+              <img src="../icons/icons8-play-64.png" alt="" />
+              <img class="add" src="../icons/plus-icon.png" alt="" />
+            </section>
+            <p class="carousel-item__details--title">Titulo descriptivo</p>
+            <p class="carousel-item__details--subtitle">2019 16+ 114min</p>
+          </section>
+        </section>
+        <section class="carousel-item">
+          <img
+            class="carousel-item__img"
+            src="../images/black-man-reading-a-newspaper-3473492.jpg"
+            alt=""
+          />
+          <section class="carousel-item__details">
+            <section>
+              <img src="../icons/icons8-play-64.png" alt="" />
+              <img class="add" src="../icons/plus-icon.png" alt="" />
+            </section>
+            <p class="carousel-item__details--title">Titulo descriptivo</p>
+            <p class="carousel-item__details--subtitle">2019 16+ 114min</p>
+          </section>
+        </section>
+        <section class="carousel-item">
+          <img
+            class="carousel-item__img"
+            src="../images/long-exposure-of-photography-of-brown-tree-3536526.jpg"
+            alt=""
+          />
+          <section class="carousel-item__details">
+            <section>
+              <img src="../icons/icons8-play-64.png" alt="" />
+              <img class="add" src="../icons/plus-icon.png" alt="" />
+            </section>
+            <p class="carousel-item__details--title">Titulo descriptivo</p>
+            <p class="carousel-item__details--subtitle">2019 16+ 114min</p>
+          </section>
+        </section>
+        <section class="carousel-item">
+          <img
+            class="carousel-item__img"
+            src="../images/people-in-front-of-brown-concrete-building-while-feeding-3429761.jpg"
+            alt=""
+          />
+          <section class="carousel-item__details">
+            <section>
+              <img src="../icons/icons8-play-64.png" alt="" />
+              <img class="add" src="../icons/plus-icon.png" alt="" />
+            </section>
+            <p class="carousel-item__details--title">Titulo descriptivo</p>
+            <p class="carousel-item__details--subtitle">2019 16+ 114min</p>
+          </section>
+        </section>
+        <section class="carousel-item">
+          <img
+            class="carousel-item__img"
+            src="../images/photo-of-bridge-under-white-clouds-3493777.jpg"
+            alt=""
+          />
+          <section class="carousel-item__details">
+            <section>
+              <img src="../icons/icons8-play-64.png" alt="" />
+              <img class="add" src="../icons/plus-icon.png" alt="" />
+            </section>
+            <p class="carousel-item__details--title">Titulo descriptivo</p>
+            <p class="carousel-item__details--subtitle">2019 16+ 114min</p>
+          </section>
+        </section>
+      </section>
+    </section>
+
     <footer class="footer">
-        <a href="/">Términos de uso</a>
-        <a href="/">Declaraión de privacidad</a>
-        <a href="/">Centro de ayuda</a>
+      <a href="/">Términos de uso</a>
+      <a href="/">Declaraión de privacidad</a>
+      <a href="/">Centro de ayuda</a>
     </footer>
-</body>
+
+    <script src="./index.js"></script>
+  </body>
 </html>

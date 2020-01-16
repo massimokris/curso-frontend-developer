@@ -69,6 +69,7 @@ body {
 
 .main {
     height: 130px;
+    margin-top: 60px;
     display: grid;
     justify-items: center;
 }
@@ -76,6 +77,14 @@ body {
 .main__title {
     color: white;
     font-size: 25px;
+}
+
+.categories__title {
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    padding-left: 30px;
+    width: 100%;
 }
 
 .input {
@@ -101,6 +110,7 @@ body {
 .carousel {
     width: 100%;
     overflow: scroll;
+    overflow-x: hidden;
     padding: 30px;
     position: relative;
 }
@@ -108,7 +118,7 @@ body {
 .carousel__container {
     white-space: nowrap;
     margin: 70px 0px;
-    padding-bottom: 10px;
+    /*padding-bottom: 10px;*/
 }
 
 .carousel-item {
@@ -179,16 +189,42 @@ body {
     align-items: center;
     height: 100px;
     width: 100%;
+}
+
+.footer a {
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    padding-left: 30px;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 600px) {
+    .login__container {
+        background-color: transparent;
+        border: none;
+        padding: 0px;
+        width: 100%;
     }
 
-    .footer a {
-        color: white;
-        cursor: pointer;
-        font-size: 14px;
-        padding-left: 30px;
-        text-decoration: none;
+    .footer {
+        align-items: flex-start;
+        flex-direction: column;
     }
 
-    .footer a:hover {
-        text-decoration: underline;
+    .carousel {
+        padding: 0px;
     }
+    
+    .carousel__container {
+        margin: 70px 20px;
+    }
+
+    .main {
+        margin-top: 40px;
+    }
+}
