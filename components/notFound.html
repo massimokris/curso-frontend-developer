@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        background-color: #8F57FD;
+        font-family: 'Muli', sans-serif;
+    }
+
+    .main {
+        height: 330px;
+        display: grid;
+        justify-items: center;
+    }
+
+    @keyframes latidos {
+        from { transform: none; }
+        50% { transform: scale(1.4); }
+        to { transform: none; }
+    }
+
+    .main__title--not-found {
+        color: white;
+        font-size: 150px;
+        margin-bottom: 0px;
+        animation: latidos 1.8s infinite;
+    }
+
+    .main__subtitle--not-found {
+        color: white;
+        font-size: 25px;
+        margin: 0px;
+    }
+</style>
+<body>
+    <section class="main">
+        <h2 class="main__title--not-found">440</h2>
+        <p class="main__subtitle--not-found">Página no encontrada.</p>
+    </section>
+</body>
+</html>
