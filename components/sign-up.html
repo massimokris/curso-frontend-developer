@@ -77,17 +77,19 @@
         margin-right: 10px;
     }
 
-    .login__container--register {
+    /* .login__container--login {
         font-size: 14px;;
-    }
+    } */
 
-    .login__container--register a {
+    .login__container--login {
         color: white;
         font-size: 17px;
         text-decoration: none;
+        display: flex;
+        justify-content: center;
     }
 
-    .login__container--register a:hover {
+    .login__container--login:hover {
         text-decoration: underline;
     }
 
@@ -127,24 +129,14 @@
 <body>
     <section class="login">
         <section class="login__container">
-            <h2>Inicia sesión</h2>
+            <h2>Regístrate</h2>
             <form action="" class="login__container--form">
-                <input class="input" type="text" placeholder="Correo">
+                <input class="input" type="text" placeholder="Nombre">
+                <input class="input" type="email" placeholder="Correo">
                 <input class="input" type="password" placeholder="Contraseña">
-                <button class="button">Iniciar sesión</button>
-                <div class="login__container--remember-me">
-                    <label>
-                        <input type="checkbox" name="" id="cbox1" value=" checkbos">
-                        Recuérdame
-                    </label>
-                    <a href="/">Olvidé mi contraseña</a>
-                </div>
+                <button class="button">Registrarme</button>
             </form>
-            <section class="login__container--social-media">
-                <div><img src="../icons/google-icon.png" alt="Google">Inicia sesión con Google</div>
-                <div><img src="../icons/twitter-icon.png" alt="Twitter">Inicia sesión con Twitter</div>
-            </section>
-            <p class="login__container--register">¿No tienes ninguna cuenta?<a href="/"> Regístrate</a></p>
+            <a class="login__container--login" href="/"> Iniciar sesión</a>
         </section>
     </section>
 </body>

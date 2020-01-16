@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        background-color: #8F57FD;
+        font-family: 'Muli', sans-serif;
+    }
+    
+    .main {
+        height: 130px;
+        display: grid;
+        justify-items: center;
+    }
+
+    .main__title {
+        color: white;
+        font-size: 25px;
+    }
+
+    .input {
+        border: 2px solid white;
+        border-radius: 55px;
+        color: white;
+        font-family: 'Muli', sans-serif;
+        font-size: 16px;
+        height: 45px;
+        padding: 0px 20px;
+        width: 70%;
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .input:focus {
+        outline: none;
+    }
+
+    ::placeholder {
+        color: white;
+    }
+</style>
+<body>
+    <section class="main">
+        <h2 class="main__title">¿Qué quieres ver hoy?</h2>
+        <input class="input" type="text" placeholder="Buscar...">
+    </section>
+</body>
+</html>
