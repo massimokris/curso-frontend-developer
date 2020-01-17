@@ -228,6 +228,14 @@ body {
   .main {
     margin-top: 40px;
   }
+
+  .carousel-item:hover ~ .carousel-item {
+    transform: none;
+  }
+  
+  .carousel__container:hover .carousel-item:hover {
+    transform: none;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
