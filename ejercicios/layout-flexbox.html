@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Practica layout</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        display: flex;
+        height: 100vh;
+        flex-flow: column;
+        font-size: 16px;
+    }
+
+    .header {
+        outline: 1px solid cornflowerblue;
+        height: 3rem;
+    }
+
+    .menu {
+        display: flex;
+    }
+
+    .menu__item {
+        list-style: none;
+        flex: 1 1 auto;
+        outline: 1px solid salmon;
+        line-height: 3rem;
+        text-align: center;
+        transition: flex .5s;
+    }
+
+    .menu__item:hover {
+        flex: 8 8 auto;
+    }
+
+    .container {
+        display: flex;
+        height: inherit; 
+    }
+
+    .container__content {
+        outline: 1px solid darkviolet;
+        flex: 1 1 auto;
+    }
+
+    .container__asaide {
+        outline: 1px solid deeppink;
+        flex: 0 0 25%;
+    }
+
+    .footer {
+        outline: 1px solid salmon;
+        height: 6rem;
+        margin-top: auto;
+    }
+</style>
+<body>
+    <header class="header">
+        <ul class="menu">
+            <li class="menu__item">Home</li>
+            <li class="menu__item">Gallery</li>
+            <li class="menu__item">About</li>
+            <li class="menu__item">Contact</li>
+        </ul>
+    </header>
+    <section class="container">
+        <section class="container__content">
+
+        </section>
+
+        <asaide class="container__asaide">
+
+
+        </asaide>
+    </section>
+    <footer class="footer">
+        Footer
+    </footer>
+</body>
+</html>
